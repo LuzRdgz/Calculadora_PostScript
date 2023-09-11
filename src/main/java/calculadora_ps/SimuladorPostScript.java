@@ -1,10 +1,20 @@
-package calculadora_postscript;
+package calculadora_ps;
 
+import java.io.IOException;
 import java.util.Scanner;
 import java.util.Stack;
+import java.util.logging.FileHandler;
+import java.util.logging.Logger;
 
 public class SimuladorPostScript {
-    public static void main(String[] args) {
+    private static final String CLASS_NAME = calcPost.class.getName();
+    private final static Logger LOG = Logger.getLogger(CLASS_NAME);
+    public static void main(String[] args) throws IOException {
+
+       // System.out.println(CLASS_NAME);
+       // FileHandler loggingFileXML = new FileHandler("bitacora.xml");
+        //FileHandler loggingFileTXT = new FileHandler("bitacora.txt");
+
         Scanner scanner = new Scanner(System.in);
         Stack<Double> pila = new Stack<>();
 
