@@ -11,6 +11,8 @@ import java.util.logging.SimpleFormatter;
 
 public class calcPost {
 
+    // CLASE DE PRUEBA
+
     private static final String CLASS_NAME = calcPost.class.getName();
     private final static Logger LOG = Logger.getLogger(CLASS_NAME);
     public static void main(String[] args)  {
